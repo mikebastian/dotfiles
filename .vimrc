@@ -83,7 +83,6 @@ let g:SuperTabLongestHighlight = 1
 
 " Colors
 " 256 color schemes needs the ncurses-term package under Ubuntu
-Bundle 'leo256'
 Bundle 'borland.vim'
 
 syntax on
@@ -93,8 +92,6 @@ syntax on
 "let g:solarized_visibility="normal"
 "set background=dark
 "color solarized
-
-color leo
 
 filetype plugin indent on
 
