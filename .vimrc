@@ -81,9 +81,6 @@ let g:SuperTabDefaultCompletionTypeDiscovery = [
 \ ]
 let g:SuperTabLongestHighlight = 1
 
-" Colors
-" 256 color schemes needs the ncurses-term package under Ubuntu
-Bundle 'borland.vim'
 
 syntax on
 
