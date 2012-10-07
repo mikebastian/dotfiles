@@ -81,6 +81,12 @@ let g:SuperTabDefaultCompletionTypeDiscovery = [
 \ ]
 let g:SuperTabLongestHighlight = 1
 
+" Color schemes
+Bundle 'flazz/vim-colorschemes'
+colorscheme putty
+"colorscheme nightwish
+"colorscheme darkblack
+"colorscheme BlackSea
 
 syntax on
 
