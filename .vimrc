@@ -64,6 +64,7 @@ Bundle 'ervandew/supertab'
 Bundle 'pythoncomplete'
 Bundle 'UltiSnips'
 Bundle 'SQLUtilities'
+Bundle 'docunext/closetag.vim'
 
 let g:UltiSnipsSnippetDirectories=["snippets"]
 
