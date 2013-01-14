@@ -112,3 +112,6 @@ if [ -f ~/.ssh/hostnames ]; then
     done
 
 fi
+
+# SAGE Root
+export SAGE_ROOT="/usr/share/sage"
