@@ -84,8 +84,8 @@ let g:SuperTabLongestHighlight = 1
 
 " Color schemes
 Bundle 'flazz/vim-colorschemes'
-colorscheme putty
-"colorscheme nightwish
+"colorscheme putty
+colorscheme nightwish
 "colorscheme darkblack
 "colorscheme BlackSea
 
@@ -102,7 +102,7 @@ filetype plugin indent on
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set textwidth=80
+set textwidth=0
 set smarttab
 set expandtab
 set noerrorbells
