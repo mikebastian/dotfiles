@@ -12,7 +12,7 @@ set number
 set mouse=a
 set mousehide
 
-set spell
+autocmd BufNewFile,BufRead *.tex set spell
 set hlsearch
 set showmatch
 set incsearch
@@ -30,6 +30,7 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set textwidth=79
 
 set background=dark
 colorscheme desert
