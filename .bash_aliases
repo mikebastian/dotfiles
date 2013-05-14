@@ -44,8 +44,6 @@ export TERM=xterm-256color
 #    alias pup="source /var/www/dev/environment/bin/activate; cd ~/puppet"
 #fi
 
-alias dev="workon core; cd src/stylightcore/src/stylight/"
-
 # Comparing dottet version numbers
 # see: http://bkhome.org/blog/?viewDetailed=02199
 
@@ -68,6 +66,11 @@ alias l='ls -CF'
 alias ..="cd .."
 alias ...="..;.."
 alias ....="...;.."
+
+alias cdp="cd ~/projects"
+alias cdb="cdp; cd backendOld"
+alias cdc="cdp; cd stylight-core"
+alias cdw="cdp; cd stylightWeb"
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
@@ -112,6 +115,3 @@ if [ -f ~/.ssh/hostnames ]; then
     done
 
 fi
-
-# SAGE Root
-export SAGE_ROOT="/usr/share/sage"
