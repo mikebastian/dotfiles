@@ -32,5 +32,7 @@ set tabstop=4
 set softtabstop=4
 set textwidth=79
 
+let g:colorizer_fgcontrast=1
+
 set background=dark
 colorscheme desert

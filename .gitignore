@@ -9,6 +9,7 @@
 !.bash_aliases
 !.bashrc
 !.Xresources
+!*.vim
 .gitignore
 .viminfo
 .vimrcold
