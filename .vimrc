@@ -34,5 +34,10 @@ set textwidth=79
 
 let g:colorizer_fgcontrast=1
 
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=10000
+
 set background=dark
 colorscheme desert
