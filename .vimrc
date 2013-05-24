@@ -39,5 +39,4 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
-"set background=dark
-colorscheme cleanphp
+colorscheme made_of_code
