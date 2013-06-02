@@ -8,6 +8,8 @@
 !.gitmodules
 !.bash_aliases
 !.bashrc
+!awesome
+!awesome/*
 .gitignore
 .viminfo
 .vimrcold
