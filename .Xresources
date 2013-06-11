@@ -1,0 +1,7 @@
+xterm*faceName:     DejaVu Sans Mono Book
+xterm*faceSize:     10
+xterm*savelines:    32565
+xterm*termName:     xterm-256color
+xterm*background:   black
+xterm*foreground:   green
+xterm*locale:       true
