@@ -1,5 +1,5 @@
 xterm*faceName:     DejaVu Sans Mono Book
-xterm*faceSize:     10
+xterm*faceSize:     12
 xterm*savelines:    32565
 xterm*termName:     xterm-256color
 xterm*background:   black
