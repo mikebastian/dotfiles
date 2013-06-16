@@ -11,3 +11,4 @@
 .gitignore
 .viminfo
 .vimrcold
+.vim/.netrwhist
