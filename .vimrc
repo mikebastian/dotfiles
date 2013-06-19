@@ -39,4 +39,4 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
-colorscheme made_of_code
+colorscheme desert
