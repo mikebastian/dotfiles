@@ -21,5 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-xset s off
-xset -dpms
+if [ -f "$HOME/.usersettings" ]; then
+    . "$HOME/.usersettings"
+fi
