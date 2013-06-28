@@ -7,7 +7,6 @@
 !.gitignore
 !.gitmodules
 !.bash_aliases
-!.bash_login
 !.bashrc
 !.Xresources
 !*.vim

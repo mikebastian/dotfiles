@@ -48,6 +48,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if [ -f "$HOME/.usersettings" ]; then
+    . "$HOME/.usersettings"
+fi
+
 function wiki() {
     dig +short txt $1.wp.dg.cx
 }
