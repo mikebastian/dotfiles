@@ -271,7 +271,7 @@ globalkeys = awful.util.table.join(
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
               end),
-    awful.key({ modkey,           }, "l", function () kbdcfg.switch() end)
+    awful.key({ modkey,           }, "p", function () kbdcfg.switch() end)
 )
 
 clientkeys = awful.util.table.join(
