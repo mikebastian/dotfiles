@@ -40,3 +40,9 @@ set undolevels=1000
 set undoreload=10000
 
 colorscheme molokai
+
+augroup vimrc_automcds
+au!
+    highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+    match OverLength /\%80v.*/
+augroup END
