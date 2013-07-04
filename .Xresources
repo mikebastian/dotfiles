@@ -26,3 +26,5 @@ URxvt.italicFont: 9x15
 URxvt.scrollBar: false
 URxvt.visualBell: true
 URxvt.fading: 15
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End:  \033[4~
