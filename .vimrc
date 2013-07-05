@@ -32,5 +32,17 @@ set tabstop=4
 set softtabstop=4
 set textwidth=79
 
-set background=dark
-colorscheme desert
+let g:colorizer_fgcontrast=1
+
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=10000
+
+colorscheme molokai
+
+augroup vimrc_automcds
+au!
+    highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+    match OverLength /\%80v.*/
+augroup END
