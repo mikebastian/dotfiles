@@ -33,20 +33,6 @@ GIT_VERSION=${git_version_string##* }
 # Needs ncurses-term under Ubuntu
 export TERM=xterm-256color
 
-#if [ -f ~/bin/python-startup.py ]; then
-#    export PYTHONSTARTUP=~/bin/python-startup.py
-#    if [ -d /var/www/dev/repo ]; then
-#        alias dev="source /var/www/dev/environment/bin/activate; cd /var/www/dev/repo"
-#    fi
-#    if [ -d /var/www/production/releases ]; then
-#        alias prod="source /var/www/production/environment/bin/activate; cd /var/www/production/releases/current"
-#    fi
-#    alias pup="source /var/www/dev/environment/bin/activate; cd ~/puppet"
-#fi
-
-# Comparing dottet version numbers
-# see: http://bkhome.org/blog/?viewDetailed=02199
-
 # ignore-submodules introduced in git 1.7.2
 if [ $GIT_VERSION = `echo -e "1.7.2\n$GIT_VERSION"|sort -t '.' -g|tail -n 1` ]; then
     alias gst="git status --ignore-submodules=dirty"
@@ -68,9 +54,6 @@ alias ...="..;.."
 alias ....="...;.."
 
 alias cdp="cd ~/projects"
-alias cdb="cdp; cd backendOld"
-alias cdc="cdp; cd stylight-core/src/stylightcore/src/stylight"
-alias cdw="cdp; cd stylight-web"
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
