@@ -54,6 +54,9 @@ alias ...="..;.."
 alias ....="...;.."
 
 alias cdp="cd ~/projects"
+alias cdb="cdp; cd backendOld"
+alias cdc="cdp; cd stylight-core/src/stylightcore/src/stylight"
+alias cdw="cdp; cd stylight-web"
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
