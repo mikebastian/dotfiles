@@ -1,4 +1,7 @@
+<<<<<<< HEAD
   
+=======
+>>>>>>> desktop
 " Vim color file
 "
 " Author: Tomas Restrepo <tomas@winterdom.com>
@@ -35,7 +38,10 @@ hi String          guifg=#E6DB74
 hi Conditional     guifg=#F92672               gui=bold
 hi Constant        guifg=#AE81FF               gui=bold
 hi Cursor          guifg=#000000 guibg=#F8F8F0
+<<<<<<< HEAD
 hi iCursor          guifg=#000000 guibg=#F8F8F0
+=======
+>>>>>>> desktop
 hi Debug           guifg=#BCA3A3               gui=bold
 hi Define          guifg=#66D9EF
 hi Delimiter       guifg=#8F8F8F
@@ -77,11 +83,20 @@ hi PreProc         guifg=#A6E22E
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=bold
 hi Search          guifg=#FFFFFF guibg=#455354
+<<<<<<< HEAD
 " marks
 hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=bold
 hi SpecialComment  guifg=#7E8E91               gui=bold
 hi Special         guifg=#66D9EF guibg=bg      gui=italic
+=======
+" marks column
+hi SignColumn      guifg=#A6E22E guibg=#232526
+hi SpecialChar     guifg=#F92672               gui=bold
+hi SpecialComment  guifg=#465457               gui=bold
+hi Special         guifg=#66D9EF guibg=bg      gui=italic
+hi SpecialKey      guifg=#888A85               gui=italic
+>>>>>>> desktop
 if has("spell")
     hi SpellBad    guisp=#FF0000 gui=undercurl
     hi SpellCap    guisp=#7070F0 gui=undercurl
@@ -111,6 +126,7 @@ if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
+<<<<<<< HEAD
    hi CursorLineNr    guifg=#FD971F               gui=none
    hi CursorColumn                  guibg=#3E3D32
    hi ColorColumn                   guibg=#3B3A32
@@ -127,12 +143,25 @@ else
    hi LineNr          guifg=#465457 guibg=#232526
    hi NonText         guifg=#465457
    hi SpecialKey      guifg=#465457
+=======
+   hi CursorColumn                  guibg=#3E3D32
+   hi LineNr          guifg=#BCBCBC guibg=#3B3A32
+   hi NonText         guifg=#BCBCBC guibg=#3B3A32
+else
+   hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
+   hi Comment         guifg=#465457
+   hi CursorLine                    guibg=#293739
+   hi CursorColumn                  guibg=#293739
+   hi LineNr          guifg=#BCBCBC guibg=#232526
+   hi NonText         guifg=#BCBCBC guibg=#232526
+>>>>>>> desktop
 end
 
 "
 " Support for 256-color terminal
 "
 if &t_Co > 255
+<<<<<<< HEAD
    if s:molokai_original == 1
       hi Normal                   ctermbg=234
       hi CursorLine               ctermbg=235   cterm=none
@@ -142,6 +171,8 @@ if &t_Co > 255
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    endif
+=======
+>>>>>>> desktop
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
    hi Number          ctermfg=135
@@ -166,11 +197,19 @@ if &t_Co > 255
    hi FoldColumn      ctermfg=67  ctermbg=16
    hi Folded          ctermfg=67  ctermbg=16
    hi Function        ctermfg=118
+<<<<<<< HEAD
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
    hi IncSearch       ctermfg=193 ctermbg=16
 
    hi keyword         ctermfg=161               cterm=bold
+=======
+   hi Identifier      ctermfg=208
+   hi Ignore          ctermfg=244 ctermbg=232
+   hi IncSearch       ctermfg=193 ctermbg=16
+
+   hi Keyword         ctermfg=161               cterm=bold
+>>>>>>> desktop
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
@@ -182,7 +221,11 @@ if &t_Co > 255
 
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
+<<<<<<< HEAD
    hi PmenuSel        ctermfg=253 ctermbg=244
+=======
+   hi PmenuSel                    ctermbg=244
+>>>>>>> desktop
    hi PmenuSbar                   ctermbg=232
    hi PmenuThumb      ctermfg=81
 
@@ -196,6 +239,7 @@ if &t_Co > 255
    hi SignColumn      ctermfg=118 ctermbg=235
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
+<<<<<<< HEAD
    hi Special         ctermfg=81 
    if has("spell")
        hi SpellBad                ctermbg=52   
@@ -203,6 +247,11 @@ if &t_Co > 255
        hi SpellLocal              ctermbg=17
        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
    endif
+=======
+   hi Special         ctermfg=81  ctermbg=232
+   hi SpecialKey      ctermfg=245
+
+>>>>>>> desktop
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
    hi StatusLineNC    ctermfg=244 ctermbg=232
@@ -222,6 +271,7 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
+<<<<<<< HEAD
    hi Comment         ctermfg=59
    hi CursorColumn                ctermbg=234
    hi ColorColumn                 ctermbg=234
@@ -267,4 +317,12 @@ if &t_Co > 255
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
    endif
+=======
+   hi Normal          ctermfg=252 ctermbg=233
+   hi Comment         ctermfg=59
+   hi CursorLine                  ctermbg=234   cterm=none
+   hi CursorColumn                ctermbg=234
+   hi LineNr          ctermfg=250 ctermbg=234
+   hi NonText         ctermfg=250 ctermbg=234
+>>>>>>> desktop
 end
