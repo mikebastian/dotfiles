@@ -56,6 +56,8 @@ function wiki() {
     dig +short txt $1.wp.dg.cx
 }
 
-export WORKON_HOME=~/projects
-mkdir -p $WORKON_HOME
-# source /usr/local/bin/virtualenvwrapper.sh
+if [ "$HOSTNAME" = "ricky" ]; then
+    export WORKON_HOME=~/projects
+    mkdir -p $WORKON_HOME
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
