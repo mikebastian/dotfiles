@@ -39,6 +39,9 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
+set laststatus=2
+let g:airline_theme='dark'
+
 colorscheme molokai
 
 augroup vimrc_automcds
