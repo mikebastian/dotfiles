@@ -61,3 +61,5 @@ if [ "$HOSTNAME" = "ricky" ]; then
     mkdir -p $WORKON_HOME
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+unset MAILCHECK
