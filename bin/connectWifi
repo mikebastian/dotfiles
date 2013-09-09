@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ifconfig wlan0 up
+wpa_supplicant -i wlan0 -c /home/sebastian/home.conf -B
+dhclient wlan0
