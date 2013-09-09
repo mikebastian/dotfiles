@@ -20,3 +20,7 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+if [ -d "/usr/local/share/cabal/bin" ] ; then
+    PATH="/usr/local/share/cabal/bin:$PATH"
+fi
