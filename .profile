@@ -22,7 +22,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 if [ -d "$HOME/.cabal/bin" ] ; then
-    PATH="/usr/local/share/cabal/bin:$PATH"
+    PATH="$HOME/.cabal/bin:$PATH"
 fi
 
 xrdb -merge .Xresources
