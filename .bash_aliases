@@ -58,6 +58,7 @@ if [ "$HOSTNAME" = "ricky" ]; then
     alias cdb="cdp; cd backendOld"
     alias cdc="cdp; cd stylight-core/src/stylightcore/src/stylight"
     alias cdw="cdp; cd stylight-web"
+    alias core="cdp; cd stylight-core/bin; source activate; cdc"
 fi
 
 # set variable identifying the chroot you work in (used in the prompt below)
