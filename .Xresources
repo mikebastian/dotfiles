@@ -21,8 +21,8 @@ URxvt.color13: rgb:fc/54/fc
 URxvt.color14: rgb:54/fc/fc
 URxvt.color15: rgb:fc/fc/fc
 URxvt.colorBD: rgb:fc/fc/fc
-URxvt.font: 9x15
-URxvt.italicFont: 9x15
+URxvt.font: xft: Terminus:size=14
+URxvt.italicFont: xft: Terminus:italic:size=14
 URxvt.scrollBar: false
 URxvt.visualBell: true
 URxvt.fading: 15
