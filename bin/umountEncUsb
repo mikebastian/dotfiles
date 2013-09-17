@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo umount /mnt/private
+sudo cryptsetup luksClose /dev/mapper/private

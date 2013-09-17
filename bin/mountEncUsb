@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sudo cryptsetup luksOpen /dev/$1 private
+sudo mount /dev/mapper/private /mnt/private
+sudo chown -R $2:$2 /mnt/private
