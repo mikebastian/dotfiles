@@ -63,3 +63,4 @@ if [ "$HOSTNAME" = "ricky" ]; then
 fi
 
 unset MAILCHECK
+ssh-add
