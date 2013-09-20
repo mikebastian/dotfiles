@@ -5,6 +5,7 @@ awful.rules = require("awful.rules")
 require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
+local vicious = require("vicious")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
@@ -125,6 +126,16 @@ kbdcfg.widget:buttons(awful.util.table.join(
     awful.button({ }, 1, function () kbdcfg.switch() end)
 ))
 
+batwidget = awful.widget.progressbar()
+batwidget:set_width(8)
+batwidget:set_height(14)
+batwidget:set_vertical(true)
+batwidget:set_background_color("#000000")
+batwidget:set_border_color(nil)
+batwidget:set_color("#00bfff")
+
+vicious.register(batwidget, vicious.widgets.bat, "$2", 120, "BATO")
+
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
@@ -207,6 +218,7 @@ for s = 1, screen.count() do
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(kbdcfg.widget)
+    right_layout:add(batwidget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 

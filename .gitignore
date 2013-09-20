@@ -12,7 +12,9 @@
 !*.vim
 !.config
 !.config/awesome
-!rc.lua
+!.config/awesome/*
+!.config/awesome/vicious/*
+!*.lua
 .gitignore
 .viminfo
 .vimrcold
