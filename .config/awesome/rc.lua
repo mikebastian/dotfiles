@@ -126,15 +126,15 @@ kbdcfg.widget:buttons(awful.util.table.join(
     awful.button({ }, 1, function () kbdcfg.switch() end)
 ))
 
-batwidget = awful.widget.progressbar()
-batwidget:set_width(8)
-batwidget:set_height(14)
-batwidget:set_vertical(true)
-batwidget:set_background_color("#000000")
-batwidget:set_border_color(nil)
-batwidget:set_color("#00bfff")
-
-vicious.register(batwidget, vicious.widgets.bat, "$2", 120, "BATO")
+batwidget = wibox.widget.textbox()
+vicious.register(batwidget, vicious.widgets.bat,
+    function(widget, args)
+        local formatstring = " Bat: "..args[1]..args[2] .."%".. " "..args[3] .. " "
+        if args[2] <= 15 and args[1] == "-" then
+            return "".. formatstring .. ""
+        end
+        return formatstring
+end, 60, "BAT0")
 
 -- {{{ Wibox
 -- Create a textclock widget
