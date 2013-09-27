@@ -16,6 +16,7 @@
 !.config/awesome/vicious/*
 !*.lua
 .gitignore
+bin/jnc
 .viminfo
 .vimrcold
 .vim/.netrwhist
