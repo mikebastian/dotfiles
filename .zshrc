@@ -44,4 +44,8 @@ plugins=(git cabal autoenv colorize git-extras python)
 
 source $ZSH/oh-my-zsh.sh
 
+alias cdp='cd projects'
+alias cds='cdp && cd private/scribendum'
+alias scribendum='cds && source .hsenv/bin/activate && cd src/scribendum'
+
 # Customize to your needs...
