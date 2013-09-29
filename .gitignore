@@ -15,6 +15,7 @@
 !.config/awesome/*
 !.config/awesome/vicious/*
 !*.lua
+!.zshrc
 .gitignore
 bin/jnc
 .viminfo
