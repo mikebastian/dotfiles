@@ -31,6 +31,7 @@
 !_git-branch
 !_git-remote
 !*.zsh
+bin/fgfs
 .gitignore
 bin/jnc
 .viminfo
