@@ -25,4 +25,4 @@ if [ -d "$HOME/.cabal/bin" ] ; then
     PATH="$HOME/.cabal/bin:$PATH"
 fi
 
-xrdb -merge .Xresources
+xrdb -merge $HOME/.Xresources
