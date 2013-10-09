@@ -46,6 +46,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias cdp='cd ~/projects'
 alias cdc='cdp && cd stylight-core'
+alias cdm='cdp && cd stylight-manage'
 alias cds='cdp && cd private/scribendum'
 alias scribendum='cds && source .hsenv/bin/activate && cd src/scribendum'
 alias core='cdc && source bin/activate && cd src/stylightcore/src/stylight/'
