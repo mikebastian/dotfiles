@@ -74,7 +74,7 @@ theme.titlebar_maximized_button_normal_active = "~/.config/awesome/default/title
 theme.titlebar_maximized_button_focus_active  = "~/.config/awesome/default/titlebar/maximized_focus_active.png"
 
 -- You can use your own command to set your wallpaper
-theme.wallpaper_cmd = { "awsetbg ~/.config/awesome/default/background.png" }
+theme.wallpaper_cmd = { "awsetbg ~/.config/awesome/default/background.jpg" }
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "~/.config/awesome/default/layouts/fairhw.png"

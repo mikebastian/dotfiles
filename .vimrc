@@ -42,10 +42,27 @@ set undoreload=10000
 set laststatus=2
 let g:airline_theme='dark'
 
-colorscheme molokai
+colorscheme devbox-dark-256
 
-augroup vimrc_automcds
-au!
-    highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-    match OverLength /\%80v.*/
-augroup END
+"==== Show 80st column ====
+
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%80v', 100)
+
+"==== Make tabs, trailing whitespace, and non-breaking spaces visible ====
+
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
+
+"==== Swap : and ; ====
+
+nnoremap  ;  :
+nnoremap  :  ;
+
+"==== Swap v and CTRL-V ====
+
+nnoremap    v    <C-V>
+nnoremap <C-V>      v
+
+vnoremap    v    <C-V>
+vnoremap <C-V>      v
