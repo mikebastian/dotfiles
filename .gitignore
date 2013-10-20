@@ -31,6 +31,8 @@
 !_git-branch
 !_git-remote
 !*.zsh
+!.profile
+!.zprofile
 bin/fgfs
 .gitignore
 bin/jnc
