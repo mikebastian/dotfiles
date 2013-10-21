@@ -10,7 +10,6 @@ How to use it
     git init
     git remote add origin git://github.com/wildsebastian/dotfiles.git
     git pull origin master
-    git submodule update --init
 
 Further reading
 ---------------
