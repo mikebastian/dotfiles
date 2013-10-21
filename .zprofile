@@ -27,4 +27,5 @@ fi
 
 xset s off
 xset -dpms
+xscreensaver -nosplash
 xrdb -merge $HOME/.Xresources
