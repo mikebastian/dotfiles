@@ -3,10 +3,10 @@ set nocompatible
 " Pathogen
 call pathogen#infect()
 call pathogen#helptags()
- 
+
 set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 filetype plugin indent on
- 
+
 syntax on
 set number
 set mouse=a
@@ -48,6 +48,20 @@ colorscheme devbox-dark-256
 
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%80v', 100)
+
+"==== Highlight matches when jumping to next ====
+
+nnoremap <silent> n     n:call HLNext(0.4)<cr>
+nnoremap <silent> N     N:call HLNext(0.4)<cr>
+
+" EITHER blink the line containing the match...
+function! HLNext (blinktime)
+    set invcursorline
+    redraw
+    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    set invcursorline
+    redraw
+endfunction
 
 "==== Make tabs, trailing whitespace, and non-breaking spaces visible ====
 
