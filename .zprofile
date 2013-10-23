@@ -25,11 +25,6 @@ if [ -d "$HOME/.cabal/bin" ] ; then
     PATH="$HOME/.cabal/bin:$PATH"
 fi
 
-if [ -z $(pgrep -u $(whoami) xscreensaver 2> /dev/null) ]
-    then
-        xscreensaver -nosplash
-fi
-
 xset s off
 xset -dpms
 xrdb -merge $HOME/.Xresources
