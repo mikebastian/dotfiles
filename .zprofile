@@ -11,7 +11,7 @@
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
+    if [ -f "$HOME/.zshrc" ]; then
         . "$HOME/.zshrc"
     fi
 fi
@@ -28,3 +28,5 @@ fi
 xset s off
 xset -dpms
 xrdb -merge $HOME/.Xresources
+
+eval $(keychain --eval --agents ssh -Q --quiet id_rsa stylight)
