@@ -26,10 +26,12 @@ elseif has("clipboard")
   set clipboard=unnamed
 endif
 
-set expandtab
-set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set smartindent
 set textwidth=79
 
 let g:colorizer_fgcontrast=1
