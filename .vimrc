@@ -48,7 +48,7 @@ colorscheme devbox-dark-256
 
 "==== Show 80st column ====
 
-highlight ColorColumn ctermbg=magenta
+highlight ColorColumn ctermbg=red
 call matchadd('ColorColumn', '\%80v', 100)
 
 "==== Highlight matches when jumping to next ====
