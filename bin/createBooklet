@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pdf2ps $1 - | psbook | psnup -2 | ps2pdf - $2
