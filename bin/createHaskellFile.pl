@@ -38,12 +38,12 @@ my @list = ('{- |',
             'Description:   <Description>',
             'Copyright:     (c) <Authors>',
             'License:       <License>',
-            '',
+            'Author:        <Author>',
             'Maintainer:    <email>',
-            'Stability:     <stability>',
-            'Portability:   portable | non-portable (<reason>)',
             '',
-            '<module description starting at first column>');
+            '<module description starting at first column>',
+            '',
+            'Copyright (C) <Year>    <Author>');
 
 my @end = ('-}');
 if( scalar(@license) > 0 ) {
