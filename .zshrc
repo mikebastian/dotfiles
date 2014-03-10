@@ -48,7 +48,9 @@ alias cdp='cd ~/projects'
 alias cdc='cdp && cd stylight-core'
 alias cdm='cdp && cd stylight-manage'
 alias cds='cdp && cd private/scribendum'
+alias cdh='cdp && cd private/hoveralls'
 alias scribendumhs='cds && source .hsenv/bin/activate'
+alias hoveralls='cdh && source .hsenv/bin/activate'
 alias core='cdc && source bin/activate && cd src/stylightcore/src/stylight/'
 
 # Customize to your needs...
